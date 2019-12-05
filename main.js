@@ -1,6 +1,6 @@
 defineClass('LGMainViewController', {
   navProfileBtnClicked: function() {
-   if (require('LGAccountManager').instance().isLogin == false) {
+   if (require('LGAccountManager').instance().isLogin() == false) {
        require('LGAccountManager').showSignInAlert();
        return;
    }
